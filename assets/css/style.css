@@ -532,19 +532,18 @@ section {
 
 .logo-symbol {
   float: left;
-  width: 44px;
+  width: 200px;
   height: 44px;
   line-height: 44px;
   background-color: #9C27B0;
-  border-radius: 100px;
+  border-radius: 11px;
   text-align: center;
   color: #fff;
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 600;
   margin-right: 8px;
   margin-top: 4px;
 }
-
 .logo-text {
   float: left;
   line-height: 50px;
@@ -693,8 +692,8 @@ button.nav-toggle i {
 
 .banner-text h4 {
   font-size: 1.7rem;
-  color: #aaa;
-  font-weight: 300;
+  color: #aaa !important;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 1.7rem;
   letter-spacing: 0.1rem;
@@ -1197,22 +1196,28 @@ button.nav-toggle i {
 .position-absoulte {
   position: absolute;
 }
-
+.text-white {
+  color: #fff !important;
+  padding: 0px 10px;
+}
 .uppercase {
   text-transform: uppercase;
 }
-
+.over_cont .text-white {
+  color: #000 !important;
+}
 .single_project .overlay {
   bottom: 0;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
-  background-color: #000;
+  background-color: #fffffff2;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
   opacity: 0.8;
   padding: 0 35px;
+  border: 2px solid #9c27b0;
 }
 
 .overlay {
@@ -1305,28 +1310,28 @@ button.nav-toggle i {
 .portfolio__content__title {
   border-top: 1px solid rgba(219, 220, 225, 0.7);
   padding: 1.5rem 2rem;
-  background: #9C27B0;
+  background: #9c27b0;
 }
 
 .portfolio__site__desc p {
   font-weight: 600;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.7rem !important;
   word-spacing: 0.2rem;
   letter-spacing: 0.1rem;
-  margin: 0;
+  margin-left: 13px !important;
 }
 
 .portfolio__site__link {
   width: 4rem;
   height: 4rem;
-  background: #fff;
+  background: #9C27B0;
   line-height: 4rem;
   border-radius: 99px;
 }
 
 .portfolio__site__link a {
-  color: #9C27B0;
+  color: #fff;
 }
 
 .portfolio-section .mix_controller .btn_cust.mixitup-control-active {
@@ -1354,7 +1359,7 @@ button.nav-toggle i {
   border: 2px solid #091b29;
   margin-bottom: 8px;
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 5px 40px;
   border-radius: 5px;
 }
 
@@ -1384,7 +1389,7 @@ section#portfolio {
   position: absolute;
   top: 50%;
   right: -5rem;
-  background: #fff;
+  background: #9C27B0;
   width: 4rem;
   height: 0.2rem;
   z-index: 99;

@@ -21,133 +21,427 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
-    .info {
-        padding: 30px;
-        background: #fff;
-        width: 100%;
-        /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
-    }
-    .col-lg-6 {
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
-    }
-    .resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #050d18;
-}
-.resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #9C27B0;
-}
-.resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
-    margin-bottom: 10px;
-}
+        .info {
+            padding: 30px;
+            background: #fff;
+            width: 100%;
+            /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
+        }
 
-.resume .resume-item h5 {
-    font-size: 16px;
-    background: #9c27b014;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #9C27B0;
-    position: relative;
-}
-.pb-0 {
-    padding-bottom: 0 !important;
-}
-.resume .resume-item ul {
-    padding-left: 20px;
-}
-.resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #9C27B0;
-    position: relative;
-}
+        .col-lg-6 {
+            box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+        }
 
-.progress-bar {
-    position: relative;
-    margin-bottom: 20px;
-    height: 30px;
-    background-color: #f3f3f3;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: width 1.5s ease-in-out;
-}
+        /* .resume .resume-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #050d18;
+        }
 
-.progress-bar::before {
-    content: attr(data-skill);
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1;
-    color: #fff;
-}
+        .resume .resume-item::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: -9px;
+            top: 0;
+            background: #fff;
+            border: 2px solid #9C27B0;
+        }
 
-.progress-bar::after {
-    content: attr(data-percentage) '%';
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    z-index: 1;
-    color: #000;
-}
+        .resume .resume-item h4 {
+            line-height: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            color: #050d18;
+            margin-bottom: 10px;
+        }
 
-.progress-bar-fill {
-    height: 100%;
-    background-color: #6a1b9a; /* Dark purple color */
-    width: 0;
-    transition: width 1.5s ease-in-out;
-    border-radius: 15px 0 0 15px;
-}
+        .resume .resume-item h5 {
+            font-size: 16px;
+            background: #9c27b014;
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
 
-    .col-sm-6 {
-        float: left;
-    }
-   
+        .resume .resume-item {
+            padding: 0 0 20px 20px;
+            margin-top: -2px;
+            border-left: 2px solid #9C27B0;
+            position: relative;
+        }
+
+        .pb-0 {
+            padding-bottom: 0 !important;
+        }
+
+        .resume .resume-item ul {
+            padding-left: 20px;
+        }
+
+        .resume .resume-item {
+            padding: 0 0 20px 20px;
+            margin-top: -2px;
+            border-left: 2px solid #9C27B0;
+            position: relative;
+        } */
+
+        /* General section styling */
+        #resume {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2 span {
+            color: #9C27B0;
+        }
+
+        /* Resume titles */
+        .resume-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            /* border-bottom: 2px solid #9C27B0; */
+        }
+
+        /* Resume items */
+        .resume-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 3px solid #9C27B0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resume-item h4 {
+            font-size: 20px;
+            color: #9C27B0;
+            margin-bottom: 10px;
+        }
+
+        .resume-item h5 {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .resume-item p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .resume-item em {
+            font-style: normal;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .resume-item ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .resume-item ul li {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .resume-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: rgb(156 39 176 / 4%);
+            transition: height 0.3s ease;
+            z-index: -1;
+        }
+
+        .resume-item:hover::before {
+            height: 100%;
+        }
+
+        /* Animation */
+        [data-aos] {
+            opacity: 0;
+            transition-property: opacity, transform;
+            transition-duration: 1s;
+        }
+
+        [data-aos="fade-up"] {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .resume-item {
+                padding: 15px;
+            }
+
+            .resume-title {
+                font-size: 20px;
+            }
+
+            .resume-item h4 {
+                font-size: 18px;
+            }
+
+            .resume-item h5 {
+                font-size: 14px;
+            }
+        }
+
+        /* General styles */
+        .progress-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .progress-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+
+        .progress-item img {
+            margin-right: 10px;
+            width: 40px;
+            height: auto;
+        }
+
+        .progress-bar {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            width: 100%;
+            height: 30px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #9c27b0;
+            width: 0;
+            transition: width 2s ease;
+        }
+
+        .skill-name, .skill-percentage {
+            position: relative;
+            z-index: 1;
+        }
+
+        span.skill-percentage {
+            color: #9C27B0;
+            margin-left: 10px;
+        }
+
+        .progress-bar.animated::before {
+            width: var(--percentage);
+        }
+
+        .col-sm-6 {
+            float: left;
+        }
+
+        .contact .info .email:hover i,
+        .contact .info .address:hover i,
+        .contact .info .phone:hover i {
+            background: #9C27B0;
+            color: #fff;
+        }
+
+        .contact .info i {
+            font-size: 20px;
+            color: #9C27B0;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #dff3fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact .info h4 {
+            padding: 0 0 0 60px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #050d18;
+        }
+
+        .contact .info p {
+            padding: 0 0 10px 60px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #173b6c;
+        }
+        
+        .portfolio-section {
+            padding: 100px 0;
+            background-color: #f0f0f0;
+        }
+        .section-title {
+            margin-bottom: 60px;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .section-title span {
+            color: #28a745;
+        }
+        .mix_controller button {
+            margin: 5px;
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+        .mix_controller button:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .project {
+            margin-bottom: 30px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .single_project {
+            transition: all 0.3s ease;
+        }
+        .single_project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .single_project:hover .overlay {
+            opacity: 1;
+        }
+        .overlay .over_cont {
+            text-align: center;
+        }
+        .overlay h5, .overlay p {
+            color: #fff;
+            margin: 10px 0;
+        }
+        .portfolio__content__title {
+            padding: 15px 0;
+        }
+        .portfolio__content__title p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .portfolio__site__link .portfolio__link__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-right: 11px !important;
+            background-color: #fff;
+            border-radius: 50%;
+            color: #9c27b0;
+            transition: all 0.3s ease;
+        }
+        .portfolio__site__link .portfolio__link__icon:hover {
+            background-color: #fff;
+        }
     </style>
     <script>
-       document.addEventListener('DOMContentLoaded', function () {
-    const progressBars = document.querySelectorAll('.progress-bar');
+       document.addEventListener("DOMContentLoaded", function() {
+            const progressBars = document.querySelectorAll(".progress-bar");
 
-    progressBars.forEach(progressBar => {
-        const percentage = progressBar.getAttribute('data-percentage');
-        const fill = document.createElement('div');
-        fill.classList.add('progress-bar-fill');
-        fill.style.width = '0';
-        progressBar.appendChild(fill);
-        setTimeout(() => {
-            fill.style.width = percentage + '%';
-        }, 500);
-    });
-});
+            const animateProgressBars = () => {
+                progressBars.forEach(bar => {
+                    const percentage = bar.getAttribute("data-percentage");
+                    bar.style.setProperty('--percentage', percentage + '%');
+                    bar.classList.add('animated');
+                });
+            };
 
-        </script>
+            const handleScroll = () => {
+                progressBars.forEach(bar => {
+                    const rect = bar.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        const percentage = bar.getAttribute("data-percentage");
+                        bar.style.setProperty('--percentage', percentage + '%');
+                        bar.classList.add('animated');
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            handleScroll();
+        });
+
+
+    </script>
 </head>
 
 <body>
@@ -155,14 +449,13 @@
     <!-- ============================================================= HEADER AREA START ============================================================= -->
 
     <header>
-        <div id="header-sticky" class="header-area transparent-header sticky-bg-responsive" >
+        <div id="header-sticky" class="header-area transparent-header sticky-bg-responsive">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="logo">
                             <a href="index.html">
-                                <div class="logo-symbol">N</div>
-                                <div class="logo-text">Nandhini</div>
+                                <div class="logo-symbol">Nandhini</div>
                             </a>
                             <button class="nav-toggle">
                                 <a><i class="fa fa-bars"></i></a>
@@ -203,13 +496,19 @@
                             <h2>I'm <span> Nandhini</span></h2>
                             <h5>Nandhini</h5>
                             <h3>Professional <span class="type casls"> </span></h3>
-                           <p>Specially I love To programing. And It,s My Passion Also I love to spread the power of web design and Web Devolopment though code.Mastered explaining very complex topics in a simple manner.
+                            <p>I'm Nandhini, a PHP Developer with 2 years of experience in backend and WordPress development. I specialize in custom plugins, themes, and e-commerce solutions, with expertise in cron jobs, automated product imports, and multi-vendor platforms.
 
-                            <p>Web Design & Development is my passion, I get deeper to understand client's need & problems. My mission is to satisfy every client and become myself a pro developer to learn new updates every day. You'll get lifetime support
-                                in any situation, I Premise that, You'll get Fanatical Support and Absolutely Positively On-time Delivery.</p>
+                            I'm dedicated to creating scalable, high-performance web applications and multilingual websites using WPML. My passion for web design and development drives me to continuously learn and deliver outstanding user experiences.
+                            </p>
+
+                            <p>I aim to deeply understand client needs, provide excellent support, and ensure timely delivery.
+                            Download my CV to learn more about my work.
+
+                            </p>
                             <div class="home-buttons">
-                                <a href="./document/my-cv.pdf" type="button" target="_blank" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
-                               
+                                <a href="./document/nandhini-experienced-CV.pdf" type="button" target="_blank" class="btn btn-primary"><i
+                                class="fas fa-download"></i> Download CV</a>
+
                             </div>
                         </div>
                     </div>
@@ -227,295 +526,256 @@
 
         <!-- ============================================================= ABOUT SECTION START ============================================================= -->
 
-        <section class="portfolio-section  pt-100 pb-105" id="portfolio" >
+        <section class="portfolio-section  pt-100 pb-105" id="portfolio">
             <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-8 col-md-10 offset-md-1 offset-lg-2 offset-xl-3 text-center">
-                                        <div class="section-title mb-80">
-                                            <h2 class="p-relative ">My <span> Portfolio</span></h2>
-                                            <p>I'm too much lazy to upload my best works on my portfolio. I have done a lot of work for my local and international clients. Here is a shortlist.</p>
-                                        </div>
-                                    </div>
-                             </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-10 offset-md-1 offset-lg-2 offset-xl-3 text-center">
+                        <div class="section-title mb-80">
+                            <h2 class="p-relative ">My <span> Portfolio</span></h2>
+                            <p>I'm passionate about web development and have worked with numerous local and international clients. Here is a shortlist of my best projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
         
                 <div class="mix_controller d-flex justify-content-center flex-wrap mb-40 ">
-                    <button class="btn btn_cust btn-outline-success mixitup-control-active" our-mixitup-control="" data-filter="all">All</button>
-                    <button class="btn btn_cust btn-outline-success" our-mixitup-control="" data-filter=".dv">Web Development</button>
+                    <button class="btn btn_cust btn-outline-success mixitup-control-active" our-mixitup-control=""
+                        data-filter="all">All</button>
+                    <button class="btn btn_cust btn-outline-success" our-mixitup-control="" data-filter=".wp">PHP</button>
+                    <button class="btn btn_cust btn-outline-success" our-mixitup-control="" data-filter=".dv">Wordpress</button>
                     <button class="btn btn_cust btn-outline-success" our-mixitup-control="" data-filter=".dg">Web Design</button>
-                    <button disabled class="btn btn_cust btn-outline-success " our-mixitup-control="" data-filter=".wp">WordPress</button>
-                    <button disabled class="btn btn_cust btn-outline-success mr-0" our-mixitup-control="" data-filter=".sh">Laravel</button>
+                    <button class="btn btn_cust btn-outline-success" our-mixitup-control="" data-filter=".sh">Laravel</button>
                 </div>
-        
         
                 <div class="row mix_container">
-
-                   
-                     <div class="col-xl-4 col-sm-6 mix dv">
+                    <!-- PHP Projects -->
+                    <div class="col-xl-4 col-sm-6 mix wp">
                         <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/realstate.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/realstate.png" data-fancybox="gallery " class="expand_btn "><i class="fas fa-expand text-white fs-30 "></i><img src="img/p1.png " class="d-none "></a>
-            <a href="http://www.newedgeinternational.com/" target="_blank " class="project_link btns btn-outline-light position-absolute text-white "><i class="fas fa-link "></i></a>
-            <div class="overlay text-center d-flex align-items-center justify-content-center ">
-                <div class="over_cont ">
-                    <h5 class="text-white ">Real Estate website </h5>
-                    <p class="text-white ">CLIENT : My Own Project</p>
-                    <p class="text-white "> This is a Real E-state Site Project Made with Laravel, Bootstarp, JQuery, DataTables, FacyApp. I only made it for my Portfolio Project.</p>
-                    <div class="rating d-flex justify-content-center ">
-                        <i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="portfolio__content__title d-flex justify-content-between align-items-center ">
-            <div class="portfolio__site__desc ">
-            <p class="capitalize position-relative ">
-                <span class="uppercase ">DEVLOPMENT</span> 
-            </p>
-            </div>
-            <div class="portfolio__site__link text-end ">
-            <a href="https://github.com/Ruhin1/ti_real_estate_website" target="_blank " class="text-center circle ">
-                <div class="portfolio__link__icon "> 
-                    <i class="fas fa-link "></i>
-                </div>
-            </a>
-            </div>
-        </div> 
-        </div>
-                     </div>
-
-                     <!--  ===================================== -->
-
-                     <div class="col-xl-4 col-sm-6 mix  dv">
-                        <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/pathgriho-admin.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/pathgriho-admin.png" data-fancybox="gallery" class="expand_btn"><i class="fas fa-expand text-white fs-30"></i><img src="img/p1.png" class="d-none"></a>
-                                <a href="https://www.assuregroupbd.com/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                            <div class="single_project position-relative rounded shadow overflow-hidden">
+                                <img src="assets/img/portfolio/Email-Checker.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="https://github.com/nandydev/SMTP-Email-Checker-Tool" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
                                 <div class="overlay text-center d-flex align-items-center justify-content-center">
                                     <div class="over_cont">
-                                        <h5 class="text-white">Pathgriho </h5>
-                                        <p class="text-white">CLIENT : sheikh fahim chowdhury</p>
-                                        <p class="text-white"> pathgriho foundation official website development.</p>
-                                        <div class="rating d-flex justify-content-center">
-                                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
-                                        </div>
+                                        <a href="assets/img/portfolio/Email-Checker.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">SMTP Email Checker Tool</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, PHP Mailer</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-        
                             <div class="portfolio__content__title d-flex justify-content-between align-items-center">
                                 <div class="portfolio__site__desc">
                                     <p class="capitalize position-relative">
-                                        <span class="uppercase">DEVLOPMENT</span> 
+                                        <span class="uppercase">PHP</span>
                                     </p>
                                 </div>
                                 <div class="portfolio__site__link text-end">
-                                    <a href="https://github.com/Ruhin1/pathgriho.org" target="_blank" class="text-center circle">
+                                    <a href="https://github.com/nandydev/SMTP-Email-Checker-Tool" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
-                                            <i class="fas fa-link "></i>
+                                            <i class="fas fa-link"></i>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                     <!--  ===================================== -->
-
-                     <div class="col-xl-4 col-sm-6 mix  dv">
+        
+                    <div class="col-xl-4 col-sm-6 mix wp">
                         <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/curd.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/curd.png" data-fancybox="gallery" class="expand_btn"><i class="fas fa-expand text-white fs-30"></i><img src="img/p1.png" class="d-none"></a>
-                                <a href="https://www.assuregroupbd.com/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                            <div class="single_project position-relative rounded shadow overflow-hidden">
+                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="#" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
                                 <div class="overlay text-center d-flex align-items-center justify-content-center">
                                     <div class="over_cont">
-                                        <h5 class="text-white">Curd Application </h5>
-                                        <p class="text-white">CLIENT : My Own Project</p>
-                                        <p class="text-white"> This is a Curd Application Project Made with Laravel 10.</p>
-                                        <div class="rating d-flex justify-content-center">
-                                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
-                                        </div>
+                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">PHP Project 2</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, MySQL</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-        
                             <div class="portfolio__content__title d-flex justify-content-between align-items-center">
                                 <div class="portfolio__site__desc">
                                     <p class="capitalize position-relative">
-                                        <span class="uppercase">DEVLOPMENT</span> 
+                                        <span class="uppercase">PHP</span>
                                     </p>
                                 </div>
                                 <div class="portfolio__site__link text-end">
-                                    <a href="https://github.com/Ruhin1/curd-laravel-10" target="_blank" class="text-center circle">
+                                    <a href="#" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
-                                            <i class="fas fa-link "></i>
+                                            <i class="fas fa-link"></i>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!--  ============================== -->
-
-                    <div class="col-xl-4 col-sm-6 mix  dg">
+        
+                    <!-- Wordpress Projects -->
+                    <div class="col-xl-4 col-sm-6 mix dv">
                         <div class="project">
-                                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                                <img src="assets/img/portfolio/portfolio7.png" alt="Project Photo" class="w-100 d-block rounded">
-                                                <a href="assets/img/portfolio/portfolio7.png" data-fancybox="gallery" class="expand_btn"><i class="fas fa-expand text-white fs-30"></i><img src="img/p1.png" class="d-none"></a>
-                                                <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
-                                                <div class="overlay text-center d-flex align-items-center justify-content-center">
-                                                    <div class="over_cont">
-                                                        <h5 class="text-white">Medinova</h5>
-                                                        <p class="text-white">CLIENT : Salim Rana</p>
-                                                        <p class="text-white">Medical,Hospitals Fully Responsive Website with Fast Loading.</p>
-                                                        <div class="rating d-flex justify-content-center">
-                                                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        
-                                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
-                                                <div class="portfolio__site__desc">
-                                                    <p class="capitalize position-relative">
-                                                        <span class="uppercase">Design</span>
-                                                    </p>
-                                                </div>
-                                                <div class="portfolio__site__link text-end">
-                                                    <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="text-center circle">
-                                                        <div class="portfolio__link__icon">
-                                                            <i class="fas fa-link "></i>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                        </div>
-                    </div>
-
-                      <!--  ============================== -->
-
-                    <div class="col-xl-4 col-sm-6 mix  dg">
-                        <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/portfolio4.jpg" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/portfolio4.jpg" data-fancybox="gallery" class="expand_btn"><i class="fas fa-expand text-white fs-30"></i><img src="img/p1.png" class="d-none"></a>
-                                <a href="https://tonmoyislamruhin1255.github.io/Sycho/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
+                                <img src="assets/img/portfolio/Import-restapi-plugin.png" alt="Project Photo" style="object-fit: contain;" class="w-100 d-block rounded">
+                                <a href="https://nandydev.github.io/Product-Import-REST-API-Docs" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
                                 <div class="overlay text-center d-flex align-items-center justify-content-center">
                                     <div class="over_cont">
-                                        <h5 class="text-white">Sycho</h5>
-                                        <p class="text-white">CLIENT :David Samuel</p>
-                                        <p class="text-white">Psychology & Counseling HTML5 Template for Psychiatrist Counseling Center.</p>
-                                        <div class="rating d-flex justify-content-center">
-                                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
-                                        </div>
+                                        <a href="assets/img/portfolio/Import-restapi-plugin.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">REST API with cron auto import Woocommerce Products</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, Wordpress, JQuery, Ajax</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-        
                             <div class="portfolio__content__title d-flex justify-content-between align-items-center">
                                 <div class="portfolio__site__desc">
                                     <p class="capitalize position-relative">
-                                        <span class="uppercase">DESIGN</span>
+                                        <span class="uppercase">PLUGIN DEVELOPMENT</span>
                                     </p>
                                 </div>
                                 <div class="portfolio__site__link text-end">
-                                    <a href="https://tonmoyislamruhin1255.github.io/Sycho/" target="_blank" class="text-center circle">
+                                    <a href="https://nandydev.github.io/Product-Import-REST-API-Docs" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
-                                            <i class="fas fa-link "></i>
+                                            <i class="fas fa-link"></i>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     
-                    <!--  ===================================== -->
-
+        
+                    <!-- Web Design Projects -->
                     <div class="col-xl-4 col-sm-6 mix dg">
                         <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/rinblogwordpress.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/rinblogwordpress.png"  data-fancybox="gallery " class="expand_btn "><i class="fas fa-expand text-white fs-30 "></i><img src="img/p1.png " class="d-none "></a>
-            <a href="https://dev-assignmentcourseweb.pantheonsite.io/ " target="_blank " class="project_link btns btn-outline-light position-absolute text-white "><i class="fas fa-link "></i></a>
-            <div class="overlay text-center d-flex align-items-center justify-content-center ">
-                <div class="over_cont ">
-                    <h5 class="text-white ">Pathgriho Fonteand </h5>
-                    <p class="text-white ">CLIENT :Nicholas Zavi</p>
-                    <p class="text-white "> Blog Website Devolopemnt including custom design.</p>
-                    <div class="rating d-flex justify-content-center ">
-                        <i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i>
+                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
+                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="https://github.com/nandydev/My-Portfolio" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Portfolio Website </h5>
+                                            <p class="text-white">Technologies: HTML, CSS, Bootstrap, Javascript</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">Web Design</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="https://github.com/nandydev/My-Portfolio" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
         
-        <div class="portfolio__content__title d-flex justify-content-between align-items-center ">
-            <div class="portfolio__site__desc ">
-            <p class="capitalize position-relative ">
-                <span class="uppercase ">DESIGN</span> 
-            </p>
-            </div>
-            <div class="portfolio__site__link text-end ">
-            <a href="https://dev-assignmentcourseweb.pantheonsite.io/ " target="_blank " class="text-center circle ">
-                <div class="portfolio__link__icon "> 
-                    <i class="fas fa-link "></i>
-                </div>
-            </a>
-            </div>
-        </div> 
-        </div>
-                    </div>
-
-                    <!--  ===================================== -->
-
                     <div class="col-xl-4 col-sm-6 mix dg">
                         <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden" style="visibility: visible; animation-name: slideInLeft;">
-                                <img src="assets/img/portfolio/pathgriho.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="assets/img/portfolio/pathgriho.png" data-fancybox="gallery" class="expand_btn "><i class="fas fa-expand text-white fs-30 "></i><img src="img/p1.png " class="d-none "></a>
-            <a href="https://dev-assignmentcourseweb.pantheonsite.io/ " target="_blank " class="project_link btns btn-outline-light position-absolute text-white "><i class="fas fa-link "></i></a>
-            <div class="overlay text-center d-flex align-items-center justify-content-center ">
-                <div class="over_cont ">
-                    <h5 class="text-white ">Healthy </h5>
-                    <p class="text-white ">CLIENT :Isteak Ahmed</p>
-                    <p class="text-white "> Organization Website Devolopemnt including custom design.</p>
-                    <div class="rating d-flex justify-content-center ">
-                        <i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i><i class="fas fa-star text-warning "></i>
+                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
+                                <img src="assets/img/portfolio/portfolio7.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/portfolio7.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Medinova</h5>
+                                            <p class="text-white">CLIENT: Salim Rana</p>
+                                            <p class="text-white">Medical, Hospitals Fully Responsive Website with Fast Loading.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">Web Design</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
         
-        <div class="portfolio__content__title d-flex justify-content-between align-items-center ">
-            <div class="portfolio__site__desc ">
-            <p class="capitalize position-relative ">
-                <span class="uppercase ">DESIGN</span> 
-            </p>
-            </div>
-            <div class="portfolio__site__link text-end ">
-            <a href="https://dev-assignmentcourseweb.pantheonsite.io/ " target="_blank " class="text-center circle ">
-                <div class="portfolio__link__icon "> 
-                    <i class="fas fa-link "></i>
-                </div>
-            </a>
-            </div>
-        </div> 
-        </div>
+                    <!-- Laravel Projects -->
+                    <div class="col-xl-4 col-sm-6 mix sh">
+                        <div class="project">
+                            <div class="single_project position-relative rounded shadow overflow-hidden">
+                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="#" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Laravel Project 1</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, Laravel</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">Laravel</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="#" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-    
+        
+                    <div class="col-xl-4 col-sm-6 mix sh">
+                        <div class="project">
+                            <div class="single_project position-relative rounded shadow overflow-hidden">
+                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="#" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Laravel Project 2</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, Laravel, MySQL</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">Laravel</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="#" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
 
-                    <!-- ===================================== -->
-                               
-                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </section>
-
-           <!-- ============================================================= SLIDER AREA END ============================================================= -->
+        <!-- ============================================================= SLIDER AREA END ============================================================= -->
 
 
         <!-- ============================================================= ABOUT SECTION START ============================================================= -->
@@ -533,23 +793,22 @@
                 </div>
 
                 <div class="row">
-                  
+
                     <div class="col-lg-5">
                         <div class="skil-thumb">
                             <img class="img-fluid" src="assets/img/banner.png" alt="">
                         </div>
                     </div>
-        
+
                     <div class="col-lg-7">
                         <div class="row pl-lg-5">
                             <div class="col-sm-12">
                                 <div class="about-content">
-                                    <h1>Hello! I’m Tonmoy</h1>
+                                    <h1>Hello! I'm Nandhini</h1>
                                     <h3 class="sub-title mb-5" id="casls"> Web Devoloper </h3>
-                                    <p>I'm Nandhini. a self-learner of <b class="font-weight-medium">Programming, FullStack Web Developer  </b> from Sylhet, Bangladesh. I love to do hard work, and it,s an easy method to show my
-                                        creativity to others. I am passionate to learn more and get my skill sets more polished and learn new technologies.Also I love coding, solving problems, building amazing projects, reading books & many other cool
-                                        stuffs. <br>
-                                        <b class="font-weight-medium ">I believe, Knowledge has no limits! </b>
+                                    <p>I'm Nandhini. a self-learner of <b class="font-weight-medium">Programming,
+                                        PHP Web Developer </b> from Madurai. 
+                                        PHP Developer with 2 years of experience in backend and WordPress development. I specialize in custom plugins, themes, and e-commerce solutions, with expertise in cron jobs, automated product imports, and multi-vendor platforms. I'm dedicated to creating scalable, high-performance web applications and multilingual websites using WPML. My passion for web design and development drives me to continuously learn and deliver outstanding user experiences <br>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +832,6 @@
                                 <ul class="list-unstyled">
                                     <li class="paragraph mb-3">
                                         <strong class="mr-"> Freelance :</strong>
-                                        <span class="freelance-avaliable"> </span>
                                         <span> Available </span>
                                     </li>
                                 </ul>
@@ -586,25 +844,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <div class="social-link ">
-                                    <ul class="social-link-inline">
-                                        
-                                        <!-- <li class="social-link-item"><a href="https://www.fiverr.com/trustedperson75" target="_blank"> <img class="fab " src="assets/img/fiverrico.png" alt="Girl in a jacket" width="21" height="21"> </a></li> -->
-                                        <li class="social-link-item"><a href="https://www.linkedin.com/in/md-tonmoy-islam-ruhin-785413237" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="social-link-item"><a href="https://github.com/Ruhin1" target="_blank"><i class="fab fa-github"></i></a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <ul class="list-unstyled">
-                                    <li class="paragraph mt-4 mb-3">
-                                        <a href="rwdcv.pdf" type="button" target="_blank" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
 
                         </div>
                     </div>
@@ -617,210 +857,174 @@
         <section id="resume" class="resume">
             <div class="container">
                 <div class="section-title mb-80 text-center">
-                <h2 class="p-relative">My <span> RESUME</span></h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-              </div>
-      
-              <div class="row">
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
-                  <h3 class="resume-title">Sumary</h3>
-                  <div class="resume-item pb-0">
-                    <h4>Alex Smith</h4>
-                    <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-                    <ul>
-                      <li>Portland par 127,Orlando, FL</li>
-                      <li>(123) 456-7891</li>
-                      <li>alice.barkley@example.com</li>
-                    </ul>
-                  </div>
-      
-                  <h3 class="resume-title">Education</h3>
-                  <div class="resume-item">
-                    <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                    <h5>2015 - 2016</h5>
-                    <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                    <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                  </div>
-                  <div class="resume-item">
-                    <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                    <h5>2010 - 2014</h5>
-                    <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                    <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-                  </div>
+                    <h2 class="p-relative">My <span>RESUME</span></h2>
                 </div>
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                  <h3 class="resume-title">Professional Experience</h3>
-                  <div class="resume-item">
-                    <h4>Senior graphic design specialist</h4>
-                    <h5>2019 - Present</h5>
-                    <p><em>Experion, New York, NY </em></p>
-                    <ul>
-                      <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                      <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                      <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                      <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                    </ul>
-                  </div>
-                  <div class="resume-item">
-                    <h4>Graphic design specialist</h4>
-                    <h5>2017 - 2018</h5>
-                    <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                    <ul>
-                      <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                      <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                      <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                      <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-      
-            </div>
-          </section>
-
-       
-
-       
-        <!-- ============================================================= SKILS SECTION START ============================================================= -->
-
-        <!-- <section class="skills-section  pt-100 pb-90" id="skill">
-            <div class="container">
+        
                 <div class="row">
-                    <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3 text-center">
-                        <div class="section-title mb-80 ">
-                            <h2 class="p-relative"> My <span>Skills </span></h2>
-                            <p>I am very passionate and dedicated person as well as a fast learner. I always keep myself updated with latest technology to ensure quality services.</p>
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Computer Science</h4>
+                            <h5>2019 - 2022</h5>
+                            <p><em>Sourashtra College of Art and Science</em> <b>Marks: 80%</b></p>
+                            <p>Kamaraj University – Madurai, Tamil Nadu</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Computer Science, High School - HSC</h4>
+                            <h5>2018 - 2019</h5>
+                            <p><em>A.A.S.S.G.HR.SEC.SCHOOL</em> <b>Marks: 72%</b></p>
+                            <p>State Board – Madurai, Tamil Nadu</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Secondary School - SSLC</h4>
+                            <h5>2016 - 2017</h5>
+                            <p><em>A.A.S.S.G.HR.SEC.SCHOOL</em> <b>Marks: 84%</b></p>
+                            <p>State Board – Madurai, Tamil Nadu</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-5">
-
-                        <div class="skil-thumb">
-                            <img class="img-fluid" src="assets/img/banner.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-
-                        <div class="skill__content d-flex justify-content-center">
-                            <ul class="skill__list">
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/html.png" alt="html">
-                                    <h4 class="sub__heading">HTML</h4>
-                                </li>
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/css.png" alt="css">
-                                    <h4 class="sub__heading">CSS</h4>
-                                </li>
-                            </ul>
-                            <ul class="skill__list">
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/js.png" alt="js">
-                                    <h4 class="sub__heading">JavaScript</h4>
-                                </li>
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/jquery.png" alt="react">
-                                    <h4 class="sub__heading">Jquery</h4>
-                                </li>
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>PHP Developer</h4>
+                            <h5>2022 - Present</h5>
+                            <p><em>Sharesoft Technology</em></p>
+                            <h6>WordPress Development</h6>
+                            <ul>
+                                <li>Developed custom WordPress plugins from scratch using PHP, ensuring clean and efficient code.</li>
+                                <li>Familiar with WordPress APIs, hooks, and filters for extending functionality and creating custom solutions.</li>
+                                <li>Created over 10+ custom WordPress plugins, including functionalities like advanced checkout field editor, social media integrations, payment integrations, and custom post types.</li>
+                                <li>Developed from scratch, Integrated Google Maps, third-party APIs, and custom REST APIs into WordPress sites, enhancing functionality and user experience.</li>
+                                <li>Managed and optimized WooCommerce-based sites, enhancing performance and usability.</li>
                             </ul>
                         </div>
-                        <div class="skill__content d-flex justify-content-center">
-                            <ul class="skill__list">
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/react.png" alt="html">
-                                    <h4 class="sub__heading">React</h4>
-                                </li>
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/bootstrap.png" alt="js">
-                                    <h4 class="sub__heading">Bootstrap</h4>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                        <div class="skill__content d-flex justify-content-center">
-                            <ul class="skill__list">
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/php.PNG" alt="html">
-                                    <h4 class="sub__heading">Php</h4>
-                                </li>
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/laravel.PNG" alt="css">
-                                    <h4 class="sub__heading">Laravel</h4>
-                                </li>
-                            </ul>
-                            <ul class="skill__list">
-
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/mysqli.PNG" alt="react">
-                                    <h4 class="sub__heading">Mysqli</h4>
-                                </li>
-
-
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/ajax.PNG" alt="js">
-                                    <h4 class="sub__heading">Ajax</h4>
-                                </li>
-
-                            </ul>
-                        </div>
-
-
-                        <div class="skill__content d-flex justify-content-center">
-                            <ul class="skill__list">
-
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/wordpress.png" alt="react">
-                                    <h4 class="sub__heading">Wordpress</h4>
-                                </li>
-                            </ul>
-                            <ul class="skill__list">
-
-                                <li class="d-inline-block text-center">
-                                    <img src="assets/img/skil/woocommerce.png" alt="css">
-                                    <h4 class="sub__heading">Woocommerce</h4>
-                                </li>
-
-                            </ul>
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </section> -->
-
-        <section class="skills-section pt-100 pb-90" id="skill">
+        </section>
+        
+         <section class="skills-section pt-100 pb-90" id="skill">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3 text-center">
                         <div class="section-title mb-80">
                             <h2 class="p-relative"> My <span>Skills</span></h2>
-                            <p>I am very passionate and dedicated person as well as a fast learner. I always keep myself updated with the latest technology to ensure quality services.</p>
+                            <p>I am a very passionate and dedicated person as well as a fast learner. I always keep myself updated with the latest technology to ensure quality services.</p>
                         </div>
                     </div>
                 </div>
         
                 <div class="row">
-                   
                     <div class="col-lg-12">
                         <div class="skill__content col-sm-12">
-                            <div id="progress-styling" class="progress-container col-sm-6">
-                                <div class="progress-bar" data-skill="HTML" data-percentage="90"></div>
-                                <div class="progress-bar" data-skill="CSS" data-percentage="85"></div>
-                                <div class="progress-bar" data-skill="JavaScript" data-percentage="80"></div>
-                                <div class="progress-bar" data-skill="jQuery" data-percentage="75"></div>
-                                <div class="progress-bar" data-skill="React" data-percentage="70"></div>
-                                <div class="progress-bar" data-skill="Bootstrap" data-percentage="90"></div>
-                            
-                            </div>
-                            <div id="progress-styling-section" class="progress-container col-sm-6">
-                                <div class="progress-bar" data-skill="PHP" data-percentage="80"></div>
-                                <div class="progress-bar" data-skill="Laravel" data-percentage="75"></div>
-                                <div class="progress-bar" data-skill="MySQLi" data-percentage="85"></div>
-                                <div class="progress-bar" data-skill="Ajax" data-percentage="80"></div>
-                                <div class="progress-bar" data-skill="WordPress" data-percentage="85"></div>
-                                <div class="progress-bar" data-skill="WooCommerce" data-percentage="80"></div>
+                            <div class="progress-container">
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/html.png" alt="html">
+                                    <div class="progress-bar" data-skill="HTML" data-percentage="90">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">HTML</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/css.png" alt="css">
+                                    <div class="progress-bar" data-skill="CSS" data-percentage="85">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">CSS</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/js.png" alt="js">
+                                    <div class="progress-bar" data-skill="JavaScript" data-percentage="80">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">JavaScript</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/jquery.png" alt="jquery">
+                                    <div class="progress-bar" data-skill="jQuery" data-percentage="75">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">jQuery</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/react.png" alt="react">
+                                    <div class="progress-bar" data-skill="React" data-percentage="70">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">React</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/bootstrap.png" alt="bootstrap">
+                                    <div class="progress-bar" data-skill="Bootstrap" data-percentage="90">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">Bootstrap</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/php.PNG" alt="php">
+                                    <div class="progress-bar" data-skill="PHP" data-percentage="80">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">PHP</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/laravel.PNG" alt="laravel">
+                                    <div class="progress-bar" data-skill="Laravel" data-percentage="75">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">Laravel</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/mysqli.PNG" alt="mysqli">
+                                    <div class="progress-bar" data-skill="MySQL" data-percentage="85">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">MySQL</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/ajax.PNG" alt="ajax">
+                                    <div class="progress-bar" data-skill="Ajax" data-percentage="80">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">Ajax</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/wordpress.png" alt="wordpress">
+                                    <div class="progress-bar" data-skill="WordPress" data-percentage="85">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">WordPress</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-item">
+                                    <img src="assets/img/skil/woocommerce.png" alt="woocommerce">
+                                    <div class="progress-bar" data-skill="WooCommerce" data-percentage="80">
+                                        <div class="progress-percentage">
+                                            <span class="skill-name">WooCommerce</span>
+                                        </div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -828,7 +1032,6 @@
             </div>
         </section>
         
-
         <!-- ============================================================= SKILLS SECTION END ============================================================= -->
 
 
@@ -839,7 +1042,8 @@
                     <div class="col-xl-6 col-lg-8 col-md-10 offset-md-1  offset-lg-2 offset-xl-3 text-center">
                         <div class="section-title mb-80 ">
                             <h2 class="p-relative ">How I <span> Work?</span></h2>
-                            <p>Hard work always pays off. I always try to make them 100% satisfied by providing quality services. </p>
+                            <p>Hard work always pays off. I always try to make them 100% satisfied by providing quality
+                                services. </p>
                         </div>
                     </div>
                 </div>
@@ -853,7 +1057,9 @@
 
                             <h3 class="sub-title my-20"> 1. Discussion</h3>
                             <p class="paragraph">
-                                To understand the project needs & requirements it’s very important for me, for that I discuss with every details to related projects if needed I communicate by video or audio conversations.
+                                To understand the project needs & requirements it’s very important for me, for that I
+                                discuss with every details to related projects if needed I communicate by video or audio
+                                conversations.
                             </p>
                         </div>
                     </div>
@@ -866,7 +1072,9 @@
 
                             <h3 class="sub-title my-20"> 2. Planning</h3>
                             <p class="paragraph">
-                                Then I can create a plan for the interior projects. Planning gives high potential to every projects. Every single detail listed in the plan, when I deliver, when I need website data form you.
+                                Then I can create a plan for the interior projects. Planning gives high potential to
+                                every projects. Every single detail listed in the plan, when I deliver, when I need
+                                website data form you.
                             </p>
                         </div>
                     </div>
@@ -879,48 +1087,59 @@
 
                             <h3 class="sub-title my-20"> 3. Design</h3>
                             <p class="paragraph">
-                                I give highly concentration to website design, every time I try to give my best to do clean and services related awesome design for the website. A nice design can improve your business quality.
+                                I give highly concentration to website design, every time I try to give my best to do
+                                clean and services related awesome design for the website. A nice design can improve
+                                your business quality.
                             </p>
                         </div>
                     </div>
 
 
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center">
+                        <div
+                            class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center">
                             <div class="work-process-icon"><i class="fa fa-code"></i></div>
 
                             <h3 class="sub-title my-20">4. Coding</h3>
                             <p class="paragraph">
-                                The website is built by web language that’s why we need to code for every website. it’s very important to have hand coding, clean and developer friendly coding. I give 100% guarantee in all of them.
+                                The website is built by web language that’s why we need to code for every website. it’s
+                                very important to have hand coding, clean and developer friendly coding. I give 100%
+                                guarantee in all of them.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center r-mt-47-mobile">
+                        <div
+                            class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center r-mt-47-mobile">
                             <div class="work-process-icon"><i class="fa fa-sync-alt"></i></div>
 
                             <h3 class="sub-title my-20"> 5. Submit for Review</h3>
                             <p class="paragraph">
-                                After design and coding, I send for review to client. After client’s checking, If have to change or revision, I say client to send all of them in a list and I am happy to do all changes every time.
+                                After design and coding, I send for review to client. After client’s checking, If have
+                                to change or revision, I say client to send all of them in a list and I am happy to do
+                                all changes every time.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center responsive-mt-20">
+                        <div
+                            class="work-process-item work-process-item-h services-item p-relative shadow rounded text-center responsive-mt-20">
                             <div class="work-process-icon"><i class="fa fa-window-restore"></i></div>
 
                             <h3 class="sub-title my-20"> 6. Website Is Ready!</h3>
                             <p class="paragraph">
-                                After reviewing everything, we are going to the final step, if everything has done, then I can publish it for everyone. In every project, i make sure to give full support to the clients.
+                                After reviewing everything, we are going to the final step, if everything has done, then
+                                I can publish it for everyone. In every project, i make sure to give full support to the
+                                clients.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-       
+
         <!-- ============================================================= SERVICE SECTION END ============================================================= -->
 
 
@@ -995,8 +1214,8 @@
             </div>
         </section> -->
 
-        
-      
+
+
         <!-- ============================================================= CONTACT SECTION START ============================================================= -->
 
         <section class="contact-section  pt-100 pb-100 fix" id="contact">
@@ -1004,8 +1223,9 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-8 col-md-10 offset-md-1 offset-lg-2  offset-xl-3 text-center">
                         <div class="section-title mb-80 ">
-                            <h2 class="p-relative">Contact Me</h2>
-                            <p>If you have anything to know, feel free to message me. You can hire me on Fiverr or Upwork, or contact me through Email, Phone, Facebook, Linkedin,instagram, or Skype.</p>
+                            <h2 class="p-relative">Contact <span>Me </span></h2>
+                            <p>If you have anything to know, feel free to message me. You can hire me on Fiverr or
+                                Upwork, or contact me through Email, Phone, Facebook, Linkedin,instagram, or Skype.</p>
                         </div>
                     </div>
                 </div>
@@ -1014,28 +1234,31 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                       
+
                         <div class="info">
                             <div class="address">
-                              <i class="bi bi-geo-alt"></i>
-                              <h4>Location:</h4>
-                              <p>Kaithari Nagar, Madurai, TN - 625005</p>
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>Kaithari Nagar, Madurai, TN - 625005</p>
                             </div>
-              
+
                             <div class="email">
-                              <i class="bi bi-envelope"></i>
-                              <h4>Email:</h4>
-                              <p>naganandhini3012@gmail.com</p>
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>naganandhini3012@gmail.com</p>
                             </div>
-              
+
                             <div class="phone">
-                              <i class="bi bi-phone"></i>
-                              <h4>Call:</h4>
-                              <p>+ 9361593789</p>
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>+ 9361593789</p>
                             </div>
-              
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15723.330193518346!2d78.05313233754187!3d9.864412243744924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00d1d36845fac5%3A0x7ce1d0293148966c!2sBhagath%20Singh%20colony%2C%20Kaithari%20Nagar%2C%20Tamil%20Nadu%20625005!5e0!3m2!1sen!2sin!4v1717712683290!5m2!1sen!2sin" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </div>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15723.330193518346!2d78.05313233754187!3d9.864412243744924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00d1d36845fac5%3A0x7ce1d0293148966c!2sBhagath%20Singh%20colony%2C%20Kaithari%20Nagar%2C%20Tamil%20Nadu%20625005!5e0!3m2!1sen!2sin!4v1717712683290!5m2!1sen!2sin"
+                                width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
 
                     <div class="col-lg-6">
@@ -1060,7 +1283,8 @@
 
                                 <div class="contact-form-item">
                                     <i class="fa fa-comment-dots"></i>
-                                    <textarea name="message" id="textarea" placeholder="Your Message" required cols="30" rows="6"></textarea>
+                                    <textarea name="message" id="textarea" placeholder="Your Message" required cols="30"
+                                        rows="6"></textarea>
                                 </div>
 
                                 <div class="submit-btn">
@@ -1078,32 +1302,35 @@
 
     <!-- ============================================================= FOOTER SECTION START ============================================================= -->
 
-    <footer >
+    <footer>
         <div class="footer-area">
             <div class="footer-copyright-text">
 
                 <div class="social-link ">
                     <ul class="social-link-inline">
-                       <!--  <li class="social-link-item"><a href="https://www.fiverr.com/trustedperson75" target="_blank"> <img class="fab " src="assets/img/fiverrico.png" alt="Girl in a jacket" width="21" height="21"> </a></li> -->
-                        <li class="social-link-item"><a href="https://www.linkedin.com/in/md-tonmoy-islam-ruhin-785413237" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="social-link-item"><a href="https://github.com/Ruhin1" target="_blank"><i class="fab fa-github"></i></a></li>
-                        
+                        <!--  <li class="social-link-item"><a href="https://www.fiverr.com/trustedperson75" target="_blank"> <img class="fab " src="assets/img/fiverrico.png" alt="Girl in a jacket" width="21" height="21"> </a></li> -->
+                        <li class="social-link-item"><a
+                                href="https://www.linkedin.com/in/md-tonmoy-islam-ruhin-785413237" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social-link-item"><a href="https://github.com/Ruhin1" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+
                     </ul>
                 </div>
-               <p> 
-                Copyright © 2022  Nandhini All Rights Reserved. </p> 
+                <p>
+                    Copyright © 2022 Nandhini All Rights Reserved. </p>
             </div>
         </div>
     </footer>
 
     <!-- ============================================================= FOOTER SECTION END ============================================================= -->
 
-  <!--  scroll up area start -->
-  <div class="scroll-up " id="scroll " style="display: none; ">
-    <a href="javascript:void(0); "><i class="fas fa-long-arrow-alt-up "></i></a>
-</div>
-<!--  scroll up area start -->
-     
+    <!--  scroll up area start -->
+    <div class="scroll-up " id="scroll " style="display: none; ">
+        <a href="javascript:void(0); "><i class="fas fa-long-arrow-alt-up "></i></a>
+    </div>
+    <!--  scroll up area start -->
+
     <!-- All JS here -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js "></script>
@@ -1117,8 +1344,8 @@
     <script src="assets/js/popper.min.js "></script>
     <script src="assets/js/jquery.waypoints.min.js "></script>
     <script src="assets/js/app.js "></script>
-    
-   
+
+
 
 
 </body>
