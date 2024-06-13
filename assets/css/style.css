@@ -1328,6 +1328,7 @@ button.nav-toggle i {
   background: #9C27B0;
   line-height: 4rem;
   border-radius: 99px;
+  margin-right: 10px;
 }
 
 .portfolio__site__link a {
