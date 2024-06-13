@@ -2,10 +2,10 @@
   var typed = new Typed(".type", {
     strings: [
       "",
-      "PHP Web Devoloper",
-      "Custom Plugin developer",
-      "PHP Wordpress developer",
-      "PHP Laravel Devloper",
+      "PHP Web Developer",
+      "Custom Plugin Developer",
+      "PHP Wordpress Developer",
+      "PHP Laravel Developer",
     ],
 
     typeSpeed: 110,
