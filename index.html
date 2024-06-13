@@ -364,7 +364,6 @@
         }
         .single_project img {
             width: 100%;
-            height: auto;
             border-radius: 10px 10px 0 0;
         }
         .overlay {
@@ -412,6 +411,27 @@
         .portfolio__site__link .portfolio__link__icon:hover {
             background-color: #fff;
         }
+
+        @media (max-width: 767px) {
+            .skills-section .skill__content .progress-container {
+                display: block; 
+            }
+            
+            .skills-section .skill__content .progress-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .skills-section .skill__content .progress-item .progress-bar {
+                height: 25px; 
+            }
+            
+            .skills-section .skill__content .progress-item .skill-percentage {
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+
     </style>
     <script>
        document.addEventListener("DOMContentLoaded", function() {
@@ -583,13 +603,14 @@
                     <div class="col-xl-4 col-sm-6 mix wp">
                         <div class="project">
                             <div class="single_project position-relative rounded shadow overflow-hidden">
-                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="#" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <img src="assets/img/portfolio/book store.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="https://github.com/nandydev/online-bookstore" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
                                 <div class="overlay text-center d-flex align-items-center justify-content-center">
                                     <div class="over_cont">
-                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
-                                            <h5 class="text-white">PHP Project 2</h5>
-                                            <p class="text-white">Technologies: HTML, CSS, PHP, MySQL</p>
+                                        <a href="assets/img/portfolio/book store.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Online Book Store Ecommerce  Shopping Website</h5>
+                                            <p class="text-white">Technologies: HTML, CSS, JAVASCRIPT, Core PHP, MySQL</p>
+                                            <p class="text-white">College Final Year Project From scratch Server and Browser Side.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -601,7 +622,7 @@
                                     </p>
                                 </div>
                                 <div class="portfolio__site__link text-end">
-                                    <a href="#" target="_blank" class="text-center circle">
+                                    <a href="https://github.com/nandydev/online-bookstore" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
                                             <i class="fas fa-link"></i>
                                         </div>
@@ -621,7 +642,9 @@
                                     <div class="over_cont">
                                         <a href="assets/img/portfolio/Import-restapi-plugin.png" data-fancybox="gallery" class="expand_btn">
                                             <h5 class="text-white">REST API with cron auto import Woocommerce Products</h5>
-                                            <p class="text-white">Technologies: HTML, CSS, PHP, Wordpress, JQuery, Ajax</p>
+                                            <p class="text-white">Technologies: HTML, CSS, PHP, Wordpress, Third Party API, JQuery, Ajax, JSON</p>
+                                            <p class="text-white">Enhance the "Import Products with Printing Options" plugin for WooCommerce with advanced API-driven import capabilities, customizable settings, comprehensive logging, automated scheduling, dynamic category mapping, and tailored printing management.
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -643,6 +666,69 @@
                         </div>
                     </div>
         
+                    <div class="col-xl-4 col-sm-6 mix dv">
+                        <div class="project">
+                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
+                                <img src="assets/img/portfolio/My-account.png" alt="Project Photo" style="object-fit: contain;" class="w-100 d-block rounded">
+                                <a href="https://github.com/nandydev/Stock-Management-plugin-docs" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/Manage-Stock.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Customer Stock Management Plugin For Woocommerce</h5>
+                                            <p class="text-white">Enables custom user roles with specific product views, stock management, notifications, and a frontend tab for customers to manage their products.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">PLUGIN DEVELOPMENT</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="https://github.com/nandydev/Stock-Management-plugin-docs" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-xl-4 col-sm-6 mix dv">
+                        <div class="project">
+                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
+                                <img src="assets/img/portfolio/Marakaki-product.png" alt="Project Photo" style="object-fit: contain;" class="w-100 d-block rounded">
+                                <a href="https://www.marakaki.com" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <div class="overlay text-center d-flex align-items-center justify-content-center">
+                                    <div class="over_cont">
+                                        <a href="assets/img/portfolio/Marakaki.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Migrate WooCommerce Website</h5>
+                                            <p class="text-white">Migrate WooCommerce seamlessly, enabling categories, Advanced attributes, variations, multi-language support, efficient product management, and customization using Elementor.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
+                                <div class="portfolio__site__desc">
+                                    <p class="capitalize position-relative">
+                                        <span class="uppercase">PLUGIN DEVELOPMENT</span>
+                                    </p>
+                                </div>
+                                <div class="portfolio__site__link text-end">
+                                    <a href="https://www.marakaki.com" target="_blank" class="text-center circle">
+                                        <div class="portfolio__link__icon">
+                                            <i class="fas fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!-- Web Design Projects -->
                     <div class="col-xl-4 col-sm-6 mix dg">
                         <div class="project">
@@ -666,38 +752,6 @@
                                 </div>
                                 <div class="portfolio__site__link text-end">
                                     <a href="https://github.com/nandydev/My-Portfolio" target="_blank" class="text-center circle">
-                                        <div class="portfolio__link__icon">
-                                            <i class="fas fa-link"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-xl-4 col-sm-6 mix dg">
-                        <div class="project">
-                            <div class="single_project position-relative  rounded  shadow overflow-hidden">
-                                <img src="assets/img/portfolio/portfolio7.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
-                                <div class="overlay text-center d-flex align-items-center justify-content-center">
-                                    <div class="over_cont">
-                                        <a href="assets/img/portfolio/portfolio7.png" data-fancybox="gallery" class="expand_btn">
-                                            <h5 class="text-white">Medinova</h5>
-                                            <p class="text-white">CLIENT: Salim Rana</p>
-                                            <p class="text-white">Medical, Hospitals Fully Responsive Website with Fast Loading.</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio__content__title d-flex justify-content-between align-items-center">
-                                <div class="portfolio__site__desc">
-                                    <p class="capitalize position-relative">
-                                        <span class="uppercase">Web Design</span>
-                                    </p>
-                                </div>
-                                <div class="portfolio__site__link text-end">
-                                    <a href="https://tonmoyislamruhin1255.github.io/Medinova/" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
                                             <i class="fas fa-link"></i>
                                         </div>
@@ -742,12 +796,12 @@
                     <div class="col-xl-4 col-sm-6 mix sh">
                         <div class="project">
                             <div class="single_project position-relative rounded shadow overflow-hidden">
-                                <img src="assets/img/portfolio/portfolio.png" alt="Project Photo" class="w-100 d-block rounded">
-                                <a href="#" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
+                                <img src="assets/img/portfolio/Laravel-Add-To-Shopping-Cart.png" alt="Project Photo" class="w-100 d-block rounded">
+                                <a href="https://github.com/nandydev/lara-addtocart" target="_blank" class="project_link btns btn-outline-light position-absolute text-white"><i class="fas fa-link"></i></a>
                                 <div class="overlay text-center d-flex align-items-center justify-content-center">
                                     <div class="over_cont">
-                                        <a href="assets/img/portfolio/portfolio.png" data-fancybox="gallery" class="expand_btn">
-                                            <h5 class="text-white">Laravel Project 2</h5>
+                                        <a href="assets/img/portfolio/Laravel-Add-To-Shopping-Cart.png" data-fancybox="gallery" class="expand_btn">
+                                            <h5 class="text-white">Laravel Shopping Cart Website</h5>
                                             <p class="text-white">Technologies: HTML, CSS, PHP, Laravel, MySQL</p>
                                         </a>
                                     </div>
@@ -760,7 +814,7 @@
                                     </p>
                                 </div>
                                 <div class="portfolio__site__link text-end">
-                                    <a href="#" target="_blank" class="text-center circle">
+                                    <a href="https://github.com/nandydev/lara-addtocart" target="_blank" class="text-center circle">
                                         <div class="portfolio__link__icon">
                                             <i class="fas fa-link"></i>
                                         </div>
@@ -933,7 +987,7 @@
                                             <span class="skill-name">CSS</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">85%</span>
+                                    <span class="skill-percentage">65%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/js.png" alt="js">
@@ -942,7 +996,7 @@
                                             <span class="skill-name">JavaScript</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">80%</span>
+                                    <span class="skill-percentage">60%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/jquery.png" alt="jquery">
@@ -960,7 +1014,7 @@
                                             <span class="skill-name">React</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">70%</span>
+                                    <span class="skill-percentage">50%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/bootstrap.png" alt="bootstrap">
@@ -969,7 +1023,7 @@
                                             <span class="skill-name">Bootstrap</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">90%</span>
+                                    <span class="skill-percentage">70%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/php.PNG" alt="php">
@@ -987,7 +1041,7 @@
                                             <span class="skill-name">Laravel</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">75%</span>
+                                    <span class="skill-percentage">65%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/mysqli.PNG" alt="mysqli">
@@ -1005,7 +1059,7 @@
                                             <span class="skill-name">Ajax</span>
                                         </div>
                                     </div>
-                                    <span class="skill-percentage">80%</span>
+                                    <span class="skill-percentage">60%</span>
                                 </div>
                                 <div class="progress-item">
                                     <img src="assets/img/skil/wordpress.png" alt="wordpress">

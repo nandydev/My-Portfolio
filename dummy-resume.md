@@ -69,22 +69,3 @@ Developed a robust automation system for product imports using cron jobs and mul
 Ensured accurate and timely updates of product listings, improving inventory management and adding features like printing options, add cart multiple variation items, set logo preview, and discount products based on selected quantities.
 
 
-
-Education:
-
-Bachelor of Science in Computer Science
-Sourashtra College | Madurai, Tamil Nadu | 06/2019 – 07/2022
-
-Certifications:
-
-[Certification Name, Issuing Organization, MM/YYYY]
-[Certification Name, Issuing Organization, MM/YYYY]
-Additional Information:
-
-Problem-Solving: Demonstrated ability to troubleshoot and resolve complex technical issues efficiently.
-Communication: Strong verbal and written communication skills, facilitating clear and effective collaboration.
-Adaptability: Quick learner with a proactive approach to adopting new technologies and methodologies.
-Team Player: Proven ability to work collaboratively in a team environment, contributing to shared goals and success.
-References:
-
-Available upon request.
