@@ -2,6 +2,7 @@
   var typed = new Typed(".type", {
     strings: [
       "",
+      "Fullstack Developer",
       "PHP Web Developer",
       "Custom Plugin Developer",
       "PHP Wordpress Developer",
